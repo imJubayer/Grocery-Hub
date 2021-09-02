@@ -75,9 +75,9 @@ function App() {
       <section className="section-center">
         <form className="grocery-form" onSubmit={handleSubmit}>
           {alert.show && <Alert alert={alert} removeAlert={showAlert} list={list}/>}
-          <h3>Grocery Bud</h3>
+          <h3>To-DO</h3>
           <div className="form-control">
-            <input className="grocery" type="text" value={name} onChange={ (e) => setName(e.target.value)} placeholder="eg.eggs"/>
+            <input className="grocery" type="text" value={name} onChange={ (e) => setName(e.target.value)} placeholder="eg.daily task"/>
             <button type='submit' className="submit-btn">{isEditing ? "edit" : "submit"}</button>
           </div>
         </form>
